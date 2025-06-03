@@ -533,7 +533,6 @@ body.contact-active {
     }
 
     .pagination-container {
-        flex-direction: column;
         gap: 10px;
     }
 
