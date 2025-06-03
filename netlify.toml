@@ -1,0 +1,8 @@
+[build]
+  functions = "netlify/functions"
+  publish = "."
+
+[[redirects]]
+  from = "/news"
+  to = "/.netlify/functions/fetch-news"
+  status = 200
