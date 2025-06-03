@@ -47,10 +47,7 @@ async function fetchNews(query = "news") {
       return;
     }
 
-    currentArticles = data.articles.map(article => {
-      article.category = category;
-      return article;
-    });
+    currentArticles = data.articles
     filteredArticles = currentArticles.filter(article =>
       article.title && article.description && article.urlToImage
     );
