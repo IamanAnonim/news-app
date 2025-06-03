@@ -158,7 +158,11 @@ aboutLinks.forEach(link => {
     newsContainer.style.display = 'none';
     paginationContainer.style.display = 'none';
     infoContainer.style.display = 'block';
+<<<<<<< HEAD
     infoContainer.innerHTML = `<div class="info-content about-info">
+=======
+    infoContainer.innerHTML =`<div class="info-content about-info">
+>>>>>>> e3868ba2204af8c0818d9fdffefce93d1c9595e6
   <h2>About Us</h2>
   <p>
     Welcome to NewsSite – your reliable and up-to-date source of global and local news. Founded with the mission to deliver unbiased, accurate, and timely information, we bring you news that matters.
