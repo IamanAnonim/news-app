@@ -158,26 +158,24 @@ aboutLinks.forEach(link => {
     newsContainer.style.display = 'none';
     paginationContainer.style.display = 'none';
     infoContainer.style.display = 'block';
-<<<<<<< HEAD
-    infoContainer.innerHTML = `<div class="info-content about-info">
-=======
-    infoContainer.innerHTML =`<div class="info-content about-info">
->>>>>>> e3868ba2204af8c0818d9fdffefce93d1c9595e6
-  <h2>About Us</h2>
-  <p>
-    Welcome to NewsSite – your reliable and up-to-date source of global and local news. Founded with the mission to deliver unbiased, accurate, and timely information, we bring you news that matters.
-  </p>
-  <p>
-    Our editorial team is made up of experienced journalists, content creators, and researchers who are passionate about telling real stories and uncovering the truth. We cover a wide range of categories including politics, business, health, science, technology, sports, and entertainment.
-  </p>
-  <p>
-    At NewsSite, we believe that access to credible news is a fundamental right. Our platform is built to empower readers with clarity, context, and diverse perspectives. Whether you're looking for breaking news, in-depth reports, or human-interest stories – we've got you covered.
-  </p>
-  <p>
-    Join thousands of daily readers and stay informed with our balanced and independent reporting. Thank you for trusting NewsSite as your go-to news platform.
-  </p>
-</div>
+    infoContainer.innerHTML = `
+    <div class="info-content about-info">
+      <h2>About Us</h2>
+      <p>
+        Welcome to NewsSite – your reliable and up-to-date source of global and local news. Founded with the mission to deliver unbiased, accurate, and timely information, we bring you news that matters.
+      </p>
+      <p>
+        Our editorial team is made up of experienced journalists, content creators, and researchers who are passionate about telling real stories and uncovering the truth. We cover a wide range of categories including politics, business, health, science, technology, sports, and entertainment.
+      </p>
+      <p>
+        At NewsSite, we believe that access to credible news is a fundamental right. Our platform is built to empower readers with clarity, context, and diverse perspectives. Whether you're looking for breaking news, in-depth reports, or human-interest stories – we've got you covered.
+      </p>
+      <p>
+        Join thousands of daily readers and stay informed with our balanced and independent reporting. Thank you for trusting NewsSite as your go-to news platform.
+      </p>
+    </div>
   `;
+
     document.body.classList.add('about-active');
     document.body.classList.remove('contact-active');
   });
@@ -189,7 +187,7 @@ contactLinks.forEach(link => {
     newsContainer.style.display = 'none';
     paginationContainer.style.display = 'none';
     infoContainer.style.display = 'block';
-    infoContainer.innerHTML = `  <div class="info-content contact-info">
+    infoContainer.innerHTML = `  < div class="info-content contact-info" >
   <h2>Contact Us</h2>
   <p>
     We'd love to hear from you! Whether you have a question about our stories, feedback to improve, or a collaboration proposal – we’re here to listen.
@@ -217,7 +215,7 @@ contactLinks.forEach(link => {
     <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="./instagram.png"
               alt="Instagram" /></a></li>
   </ul>
-</div>`;
+</div > `;
     document.body.classList.add('contact-active');
     document.body.classList.remove('about-active');
   });
@@ -235,26 +233,26 @@ document.getElementById('current-year').textContent = new Date().getFullYear();
 
 fetchNews('news');
 const privacyPolicyContent = `
- <div class="info-content privacy-policy">
+      < div class="info-content privacy-policy" >
     <h2>Privacy Policy</h2>
     <p>At NewsSite, we take your privacy seriously. This Privacy Policy outlines the types of information we collect, how we use it, and the steps we take to protect your personal data.</p>
     <p><strong>Information We Collect:</strong> When you visit our site, we may collect non-personally identifiable information such as browser type, IP address, and pages visited. If you subscribe to newsletters or contact us, we may also collect your name and email address.</p>
     <p><strong>How We Use Your Information:</strong> We use collected data to improve our content, personalize your experience, and send you updates (if you opt-in). We do not sell, rent, or share your personal data with third parties for marketing purposes.</p>
     <p><strong>Security:</strong> We implement reasonable technical and organizational measures to safeguard your data from unauthorized access, disclosure, or misuse.</p>
     <p>By using NewsSite, you agree to the practices outlined in this Privacy Policy. We may update this policy from time to time, and the latest version will always be available here.</p>
-  </div>
-`;
+  </div >
+      `;
 
 const termsServiceContent = `
- <div class="info-content terms-service">
+      < div class="info-content terms-service" >
     <h2>Terms of Service</h2>
     <p>Welcome to NewsSite. These Terms of Service govern your use of our website and services. By accessing or using our platform, you agree to comply with and be bound by these terms.</p>
     <p><strong>Content Usage:</strong> All content on NewsSite is for informational purposes only. You may not copy, reproduce, or redistribute content without explicit permission, except for personal and non-commercial use.</p>
     <p><strong>User Conduct:</strong> Users are expected to interact respectfully. You agree not to post harmful, misleading, or illegal content. We reserve the right to remove such content and suspend accounts at our discretion.</p>
     <p><strong>Limitation of Liability:</strong> NewsSite is not liable for any losses or damages resulting from reliance on content published on this site. While we strive for accuracy, we do not guarantee error-free information.</p>
     <p>We reserve the right to update these terms at any time. Continued use of the platform after changes implies acceptance of the updated terms.</p>
-  </div>
-`;
+  </div >
+      `;
 
 
 const aboutLinkFooter = document.querySelector('.about-link-footer');
@@ -273,7 +271,7 @@ function showInfoContent(htmlContent) {
 aboutLinkFooter.addEventListener('click', e => {
   e.preventDefault();
   showInfoContent(`
-    <div class="info-content about-info">
+      < div class="info-content about-info" >
       <h2>About Us</h2>
       <p>
         Welcome to NewsSite – your reliable and up-to-date source of global and local news. Founded with the mission to deliver unbiased, accurate, and timely information, we bring you news that matters.
@@ -287,14 +285,14 @@ aboutLinkFooter.addEventListener('click', e => {
       <p>
         Join thousands of daily readers and stay informed with our balanced and independent reporting. Thank you for trusting NewsSite as your go-to news platform.
       </p>
-    </div>
-  `);
+    </div >
+      `);
 });
 
 contactLinkFooter.addEventListener('click', e => {
   e.preventDefault();
   showInfoContent(`
-    <div class="info-content contact-info">
+      < div class="info-content contact-info" >
       <h2>Contact Us</h2>
       <p>
         We'd love to hear from you! Whether you have a question about our stories, feedback to improve, or a collaboration proposal – we’re here to listen.
@@ -319,8 +317,8 @@ contactLinkFooter.addEventListener('click', e => {
         <li><a href="https://x.com/" target="_blank" rel="noopener"><img src="./x.png" alt="X" /></a></li>
         <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="./instagram.png" alt="Instagram" /></a></li>
       </ul>
-    </div>
-  `);
+    </div >
+      `);
 });
 
 privacyPolicyLink.addEventListener('click', e => {
