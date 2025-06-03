@@ -82,7 +82,6 @@ function displayNews() {
       <img src="${article.urlToImage || 'https://via.placeholder.com/400x200?text=No+Image'}" class="news-img" alt="News Image" />
       <div class="news-content">
         <h3>${article.title}</h3>
-         <p class="category-label"><strong>${article.category}</strong></p>
         <p>${article.description}</p>
         <p class="news-source">${article.source.name} - ${new Date(article.publishedAt).toLocaleString()}</p>
       </div>
